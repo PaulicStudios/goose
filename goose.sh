@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the file URL and target paths
-FILE_URL="https://example.com/sample.mp3"
+FILE_URL="https://raw.githubusercontent.com/PaulicStudios/goose/refs/heads/main/goose.zip"
 HOME_DIR="$HOME"
 DOWNLOAD_DIR="$HOME/Downloads"
 MUSIC_DIR="$HOME/Music"
