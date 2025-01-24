@@ -1,0 +1,7 @@
+[ while true ] {    # Changed [ to {
+    osascript -e 'tell application "iTerm" to create window with default profile'    # Fixed AppleScript syntax
+    osascript -e 'tell application "iTerm" to create window with default profile'    # Fixed AppleScript syntax
+    exit
+}
+
+trap shexit EXIT
