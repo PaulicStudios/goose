@@ -10,5 +10,3 @@ osascript -e 'tell app "System Events" to display dialog "Did you lock your scre
     osascript -e 'tell application "iTerm" to create window with default profile'
     sleep 1
 }
-
-trap shexit EXIT
