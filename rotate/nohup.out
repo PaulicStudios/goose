@@ -1,0 +1,141 @@
+bash: rotate/rotate.sh: No such file or directory
+usage: fb-rotate -l
+       fb-rotate -i
+       fb-rotate -d <display ID> -m
+       fb-rotate -d <display ID> -r <0|90|180|270|1>
+
+-r 1 signfies 90 if currently not rotated; otherwise 0 (i.e. toggle)
+
+-d -1 can be used for the <display ID> of the internal monitor
+-d 0  can be used for the <display ID> of the main monitor
+-d 1  can be used for the <display ID> of the first non-internal monitor
+usage: fb-rotate -l
+       fb-rotate -i
+       fb-rotate -d <display ID> -m
+       fb-rotate -d <display ID> -r <0|90|180|270|1>
+
+-r 1 signfies 90 if currently not rotated; otherwise 0 (i.e. toggle)
+
+-d -1 can be used for the <display ID> of the internal monitor
+-d 0  can be used for the <display ID> of the main monitor
+-d 1  can be used for the <display ID> of the first non-internal monitor
+usage: fb-rotate -l
+       fb-rotate -i
+       fb-rotate -d <display ID> -m
+       fb-rotate -d <display ID> -r <0|90|180|270|1>
+
+-r 1 signfies 90 if currently not rotated; otherwise 0 (i.e. toggle)
+
+-d -1 can be used for the <display ID> of the internal monitor
+-d 0  can be used for the <display ID> of the main monitor
+-d 1  can be used for the <display ID> of the first non-internal monitor
+usage: fb-rotate -l
+       fb-rotate -i
+       fb-rotate -d <display ID> -m
+       fb-rotate -d <display ID> -r <0|90|180|270|1>
+
+-r 1 signfies 90 if currently not rotated; otherwise 0 (i.e. toggle)
+
+-d -1 can be used for the <display ID> of the internal monitor
+-d 0  can be used for the <display ID> of the main monitor
+-d 1  can be used for the <display ID> of the first non-internal monitor
+usage: fb-rotate -l
+       fb-rotate -i
+       fb-rotate -d <display ID> -m
+       fb-rotate -d <display ID> -r <0|90|180|270|1>
+
+-r 1 signfies 90 if currently not rotated; otherwise 0 (i.e. toggle)
+
+-d -1 can be used for the <display ID> of the internal monitor
+-d 0  can be used for the <display ID> of the main monitor
+-d 1  can be used for the <display ID> of the first non-internal monitor
+usage: fb-rotate -l
+       fb-rotate -i
+       fb-rotate -d <display ID> -m
+       fb-rotate -d <display ID> -r <0|90|180|270|1>
+
+-r 1 signfies 90 if currently not rotated; otherwise 0 (i.e. toggle)
+
+-d -1 can be used for the <display ID> of the internal monitor
+-d 0  can be used for the <display ID> of the main monitor
+-d 1  can be used for the <display ID> of the first non-internal monitor
+usage: fb-rotate -l
+       fb-rotate -i
+       fb-rotate -d <display ID> -m
+       fb-rotate -d <display ID> -r <0|90|180|270|1>
+
+-r 1 signfies 90 if currently not rotated; otherwise 0 (i.e. toggle)
+
+-d -1 can be used for the <display ID> of the internal monitor
+-d 0  can be used for the <display ID> of the main monitor
+-d 1  can be used for the <display ID> of the first non-internal monitor
+usage: fb-rotate -l
+       fb-rotate -i
+       fb-rotate -d <display ID> -m
+       fb-rotate -d <display ID> -r <0|90|180|270|1>
+
+-r 1 signfies 90 if currently not rotated; otherwise 0 (i.e. toggle)
+
+-d -1 can be used for the <display ID> of the internal monitor
+-d 0  can be used for the <display ID> of the main monitor
+-d 1  can be used for the <display ID> of the first non-internal monitor
+usage: fb-rotate -l
+       fb-rotate -i
+       fb-rotate -d <display ID> -m
+       fb-rotate -d <display ID> -r <0|90|180|270|1>
+
+-r 1 signfies 90 if currently not rotated; otherwise 0 (i.e. toggle)
+
+-d -1 can be used for the <display ID> of the internal monitor
+-d 0  can be used for the <display ID> of the main monitor
+-d 1  can be used for the <display ID> of the first non-internal monitor
+usage: fb-rotate -l
+       fb-rotate -i
+       fb-rotate -d <display ID> -m
+       fb-rotate -d <display ID> -r <0|90|180|270|1>
+
+-r 1 signfies 90 if currently not rotated; otherwise 0 (i.e. toggle)
+
+-d -1 can be used for the <display ID> of the internal monitor
+-d 0  can be used for the <display ID> of the main monitor
+-d 1  can be used for the <display ID> of the first non-internal monitor
+usage: fb-rotate -l
+       fb-rotate -i
+       fb-rotate -d <display ID> -m
+       fb-rotate -d <display ID> -r <0|90|180|270|1>
+
+-r 1 signfies 90 if currently not rotated; otherwise 0 (i.e. toggle)
+
+-d -1 can be used for the <display ID> of the internal monitor
+-d 0  can be used for the <display ID> of the main monitor
+-d 1  can be used for the <display ID> of the first non-internal monitor
+usage: fb-rotate -l
+       fb-rotate -i
+       fb-rotate -d <display ID> -m
+       fb-rotate -d <display ID> -r <0|90|180|270|1>
+
+-r 1 signfies 90 if currently not rotated; otherwise 0 (i.e. toggle)
+
+-d -1 can be used for the <display ID> of the internal monitor
+-d 0  can be used for the <display ID> of the main monitor
+-d 1  can be used for the <display ID> of the first non-internal monitor
+usage: fb-rotate -l
+       fb-rotate -i
+       fb-rotate -d <display ID> -m
+       fb-rotate -d <display ID> -r <0|90|180|270|1>
+
+-r 1 signfies 90 if currently not rotated; otherwise 0 (i.e. toggle)
+
+-d -1 can be used for the <display ID> of the internal monitor
+-d 0  can be used for the <display ID> of the main monitor
+-d 1  can be used for the <display ID> of the first non-internal monitor
+usage: fb-rotate -l
+       fb-rotate -i
+       fb-rotate -d <display ID> -m
+       fb-rotate -d <display ID> -r <0|90|180|270|1>
+
+-r 1 signfies 90 if currently not rotated; otherwise 0 (i.e. toggle)
+
+-d -1 can be used for the <display ID> of the internal monitor
+-d 0  can be used for the <display ID> of the main monitor
+-d 1  can be used for the <display ID> of the first non-internal monitor
